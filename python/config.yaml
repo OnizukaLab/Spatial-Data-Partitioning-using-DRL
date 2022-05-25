@@ -43,4 +43,4 @@ env:
   }
   # command for workload application using apache sedona
   run_args: ["spark-submit", "--jars", "./sedona/geospark-1.3.1.jar", "--master", "local", 
-                    "--class", "RunCost_DJ", "geosparkapplication_2.11-0.1.jar"] 
+                    "--class", "RunCost_DJ", "./sedona/geosparkapplication_2.11-0.1.jar"] 
