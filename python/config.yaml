@@ -1,0 +1,46 @@
+# Hyper parameters
+params:
+  gamma: 0.99 
+  max_steps: 200
+  num_episodes: 5000 
+  batch_size: 32 
+  agent_memory_capacity: 10000
+  demo_memory_capacity: 100
+  demo_ratio: 0.25
+  eps_random: 0.1
+  eps_shift: 0.2
+  lr: 0.001
+  update_main_freq: 1
+  update_target_freq: 10000 
+  tau: 0.001 
+  lambda1: 1.0 
+  lambda2: 1.0 
+  lambda3: 0.00005 
+  margin: 0.8
+  shift_grids: 1
+
+  num_multi_step_reward: 3
+  use_per: True 
+
+  demo_episodes: 5
+  pre_num_episodes: 5000
+  pre_update_target_freq: 1000 
+
+  test_freq: 1 
+  log_freq: 10 
+  save_freq: 1000 
+  patience: 10 
+
+env:
+  num_machines: 8  
+  max_partitions: 8
+  is_run_query: True
+  grids: {"lat_num": 30, "long_num": 30} 
+  points_path: "./datasets/usa_points_100k.csv" 
+  workload : {
+    distance: [500, 1000, 5000],
+    rate: [0.25, 0.5, 0.25]
+  }
+  # command for workload application using apache sedona
+  run_args: ["spark-submit", "--jars", "sedona.jar", "--master", "local", 
+                    "--class", "RunCost_DJ", "sedonaapplication.jar"] 
