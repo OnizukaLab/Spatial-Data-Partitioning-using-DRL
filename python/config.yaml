@@ -42,5 +42,5 @@ env:
     rate: [0.25, 0.5, 0.25]
   }
   # command for workload application using apache sedona
-  run_args: ["spark-submit", "--jars", "sedona.jar", "--master", "local", 
-                    "--class", "RunCost_DJ", "sedonaapplication.jar"] 
+  run_args: ["spark-submit", "--jars", "./sedona/geospark-1.3.1.jar", "--master", "local", 
+                    "--class", "RunCost_DJ", "geosparkapplication_2.11-0.1.jar"] 
