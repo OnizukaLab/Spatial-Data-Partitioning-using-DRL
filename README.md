@@ -10,7 +10,6 @@ A framework for applying deep reinforcement learning to spatial data partitionin
 ### Code
 Execute the following commands on the master node (or locally).
 ```
-$ cd source
 $ python python/main.py
 ```
 
