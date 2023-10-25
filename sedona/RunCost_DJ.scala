@@ -32,10 +32,10 @@ object RunCost_DJ extends App{
   //Datasets
   val points = "./datasets/usa_points_100k.csv"
 
-  val query_path = "../tmp/query.csv"
+  val query_path = "./tmp/query.csv"
   val Queries = readCSV(query_path)
 
-  val bestcost_path = "../tmp/best_cost.csv"
+  val bestcost_path = "./tmp/best_cost.csv"
   val BestCosts = readCSV(bestcost_path)
 
   var t0 = 0L
@@ -79,7 +79,7 @@ object RunCost_DJ extends App{
 
           if (response_time > 2 * BestCosts(i)(0)) {
             println("stop run query")
-            writeCSV("../tmp/run_cost.csv", median_time_list, false)
+            writeCSV("./tmp/run_cost.csv", median_time_list, false)
             b.break
           }
           response_time_list :+= response_time
@@ -88,7 +88,7 @@ object RunCost_DJ extends App{
         median_time_list :+= median_time
       }
       println("finish run query")
-      writeCSV("../tmp/run_cost.csv", median_time_list,true)
+      writeCSV("./tmp/run_cost.csv", median_time_list,true)
     }
     pointRDD.spatialPartitionedRDD.unpersist()
   }
