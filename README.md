@@ -22,5 +22,5 @@ You can execute program using the two datasets OSM-US, OSM-SA. Or you can use an
 ### GeoSparkApplication_scala
 You can create a `.scala` file of the query program in `GeoSparkApplication_scala/src/main/scala/sedona/evaluation/`.
 And, run the `sbt package` command to build the `.scala` file. You should install sbt as needed.
-`GeoSparkApplication_scala/target/scala-2.11/geosparkapplication_2.11-0.1.jar` will be generated and placed in `. /sedona/` to be applied to the main training program.
+`GeoSparkApplication_scala/target/scala-2.11/geosparkapplication_2.11-0.1.jar` will be generated and placed in `./sedona/` to be applied to the main training program.
 If you change the data set specified in `.scala` file, specify the same data set in `pyhton/config.yaml`.
