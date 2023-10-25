@@ -1,0 +1,5 @@
+[warn] scala-library-2.11.8-sources.jar no longer exists at \Users\Hori_Handai\Library\Caches\Coursier\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.11.8\scala-library-2.11.8-sources.jar
+[debug] "not up to date. inChanged = false, force = false
+[debug] Updating ProjectRef(uri("file:/C:/Users/hk-99/Research/ApacheSedonaApplication_scala/"), "apachesedonaapplication_scala")...
+[debug] Done updating ProjectRef(uri("file:/C:/Users/hk-99/Research/ApacheSedonaApplication_scala/"), "apachesedonaapplication_scala")
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
