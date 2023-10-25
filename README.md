@@ -20,6 +20,7 @@ In the last line of `python/config.yaml`, the `--master` address and the path to
 You can execute program using the two datasets OSM-US, OSM-SA. Or you can use any dataset that consists of two columns of latitude and longitude.
 
 ### GeoSparkApplication_scala
-You can create a scala file of the query program in `GeoSparkApplication_scala/src/main/scala/sedona/evaluation/`.
-And, run the `sbt package` command to build the scala file. You should install sbt as needed.
+You can create a `.scala` file of the query program in `GeoSparkApplication_scala/src/main/scala/sedona/evaluation/`.
+And, run the `sbt package` command to build the `.scala` file. You should install sbt as needed.
 `GeoSparkApplication_scala/target/scala-2.11/geosparkapplication_2.11-0.1.jar` will be generated and placed in `. /sedona/` to be applied to the main training program.
+If you change the data set specified in `.scala` file, specify the same data set in `pyhton/config.yaml`.
