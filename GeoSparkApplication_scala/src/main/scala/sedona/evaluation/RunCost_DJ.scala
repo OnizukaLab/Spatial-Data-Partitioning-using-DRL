@@ -33,7 +33,7 @@ object RunCost_DJ extends App{
 
   //Datasets
   val points = "./datasets/usa_points_100k.csv" // for local
-  // val points = "/data/usa_points_100k.csv" // for hadoop
+  // val points = "/data/usa_points_100k.csv" // for hdfs
 
   val query_path = "./tmp/query.csv"
   val Queries = readCSV(query_path)
